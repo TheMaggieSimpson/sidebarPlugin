@@ -1,0 +1,61 @@
+/* top left corner: open sidebar */
+#pluginOpenSidebar {
+    border-radius: 5px;
+    position: fixed;
+    display: block;
+    width: 25px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+#pluginOpenSidebar.light {
+    color: rgba(0,0,0);
+    border: solid;
+    border-width: thin;
+    border-color:  rgba(0,0,0);
+    background-color: rgba(255,255,255, 0.5);
+}
+#pluginOpenSidebar.dark {
+    color: rgba(255,255,255);
+    border: solid;
+    border-width: thin;
+    border-color:  rgba(255,255,255);
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* sidebar */
+#pluginSidebar {
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    width: 250px;
+    max-height: 500px;
+    margin: 10px;
+    overflow: auto;
+    z-index: 999;
+}
+#pluginSidebar.light {
+    color: rgba(0,0,0);
+    border: solid;
+    border-width: thin;
+    border-color:  rgba(0,0,0);
+    background-color: rgba(255,255,255,0.5);
+}
+#pluginSidebar.dark {
+    color: rgba(255,255,255);
+    border: solid;
+    border-width: thin;
+    border-color:  rgba(255,255,255);
+    background-color: rgba(0,0,0,0.5);
+}
+p, img, form, input, label, select, textarea, button, fieldset, output {
+    margin: inherit;
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    #pluginSidebar {
+        display: none;
+    }
+  }
