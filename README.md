@@ -1,5 +1,5 @@
 # SUMMARY
-A simple side navigation for web-apps
+A simple plugin to add a sidebar navigation to your web-apps
 
 ## USAGE
 ### Basic
